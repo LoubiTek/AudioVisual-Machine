@@ -3,7 +3,7 @@ Processing 3 | AudioVisual Machine Project
 
 Official processing site: https://processing.org/
 
-# Explanation and commentary: <br/>
+# Explanation and commentary <br/>
 
 My goal is to create an old school audio-visual machine but a little bit modern ^^. <br/>
 
