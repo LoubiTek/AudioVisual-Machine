@@ -3,7 +3,7 @@ Processing 3 | AudioVisual Machine Project
 
 Official processing site: https://processing.org/
 
-Explanation and commentary: <br/>
+# Explanation and commentary: <br/>
 
 My goal is to create an old school audio-visual machine but a little bit modern. <br/>
 
@@ -20,7 +20,7 @@ Display CGA Mode: <br/>
 
 Screen Definition = 320x200 <br/>
 FrameRate = 30 <br/>
-Color Depth = 2-bit color
+Color Depth = 2-bit color <br/>
 Palette --> 4 colors (black, pink, pink 50% saturate, white) <br/>
 
 Audio: <br/>
@@ -28,5 +28,6 @@ Audio: <br/>
 Canal = MONO <br/>
 BufferSize = 256 <br/>
 
+# License <br/>
+Feel free to change the code or replace / add your own content. License and CC0 ! <br/>
 Have Fun and Enjoy ! <br/>
-Feel free to change the code or replace / add your own content. License and CC0 !
