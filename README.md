@@ -28,15 +28,15 @@ Audio: <br/>
 Canal = MONO <br/>
 BufferSize = 256 <br/>
 
-8 bits Samples: (BeatBox)
-Drum Kit List
+8 bits Samples: (BeatBox) <br/>
+Drum Kit List <br/>
 
 - Kick
 - Open Hat
 - Hit Hat
 - Snare
 
-All sounds were created with my own voice!
+All sounds were created with my own voice! <br/>
 
 Menu: <br/>
 
