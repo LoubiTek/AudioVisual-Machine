@@ -27,6 +27,6 @@ void LoadAudio()
   // drumkit
   drumkit[0] = minim.loadFile("drumkit/kick.wav");
   drumkit[1] = minim.loadFile("drumkit/open hat.wav");
-  drumkit[2] = minim.loadFile("drumkit/hat.wav");
+  drumkit[2] = minim.loadFile("drumkit/hit hat.wav");
   drumkit[3] = minim.loadFile("drumkit/snare.wav");
 }
