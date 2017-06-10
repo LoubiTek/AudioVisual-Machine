@@ -38,4 +38,5 @@ void Texts()
   fill(Pink[3]);
   textSize(TextSize_16 - 4);
   text("TEST = USE // <-(L) MOVE (R)-> // READY!", 10,100);
+  text("And press touch k,o,h,s for play sounds", 10,100);
 }
