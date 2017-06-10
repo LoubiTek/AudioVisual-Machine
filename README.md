@@ -28,6 +28,18 @@ Audio: <br/>
 Canal = MONO <br/>
 BufferSize = 256 <br/>
 
+Menu: <br/>
+
+Start = Lunch the sequencer <br/>
+Options = (BPM,FPS,VOL) <br/>
+Credit = Draw my nickname <br/>
+Exit = Close/Quit <br/>
+
+Two Modes: Keywords and Mouse <br/>
+
+Keywords = Manuel <br/>
+Mouse = Grid <br/>
+
 # License <br/>
 Feel free to change the code or replace / add your own content. License and CC0 ! <br/>
 Have Fun and Enjoy ! <br/>
