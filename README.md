@@ -28,6 +28,16 @@ Audio: <br/>
 Canal = MONO <br/>
 BufferSize = 256 <br/>
 
+8 bits Samples: (BeatBox)
+Drum Kit List
+
+- Kick
+- Open Hat
+- Hit Hat
+- Snare
+
+All sounds were created with my own voice!
+
 Menu: <br/>
 
 Start = Lunch the sequencer <br/>
