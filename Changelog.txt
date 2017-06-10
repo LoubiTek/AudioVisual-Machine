@@ -1,0 +1,10 @@
+LoubiTek| AudioVisual Machine |2017
+
+Version 0.0
+-----------
+- Start the idea of projet !
+
+
+Version 0.1
+-----------
+- Add Keywords Mode (for play manuel the 8 bits beatbox drumkit sounds)

@@ -1,0 +1,35 @@
+AudioVisual Machine Project
+
+Display CGA Mode:
+
+Screen Definition = 320x200
+FrameRate = 30
+Color Depth = 2-bit color
+Palette --> 4 colors (black, pink, pink 50% saturate, white)
+
+Audio:
+
+Canal = MONO
+BufferSize = 256
+
+8 bits Samples: (BeatBox)
+Drum Kit List
+
+- Kick
+- Open Hat
+- Hit Hat
+- Snare
+
+All sounds were created with my own voice!
+
+Menu:
+
+Start = Lunch the sequencer
+Options = (BPM,FPS,VOL)
+Credit = Draw my nickname
+Exit = Close/Quit
+
+Two Modes: Keywords and Mouse
+
+Keywords = Manuel
+Mouse = Grid
