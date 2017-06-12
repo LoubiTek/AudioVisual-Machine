@@ -85,7 +85,6 @@ void Welcome()
   stroke(random(256), random(256), random(256));
   line(width*note/1000, 0, width*note/1000, height);
   
-  MAO();
   Texts();
 }
 
