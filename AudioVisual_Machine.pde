@@ -3,18 +3,15 @@
 String GFX = JAVA2D;
 byte FPS = 30;
 
-float V = 0.0;
-byte TextSize_16 = 16;
-
-float note = 0;
+float V = 0.2;
 
 boolean Start = false;
-boolean MAO = true;
 boolean Event = true;
+//boolean SoftWareLoop = true;
+//boolean SoftWare = false;
+//boolean Intro = true;
+//boolean Welcome = false;
 //boolean Sequenceur = false;
-
-byte MAO_x = 0;
-byte MAO_y = 64;
 
 //int BPM = 0;
 
@@ -33,6 +30,16 @@ void settings()
   LoadAudio();
 }
 
+void Loading()
+{
+  // Read Informations Text
+  Changelog = loadStrings("Changelog.txt");
+  for (int LatestVersion = 0; LatestVersion < Changelog.length; LatestVersion++)
+  {
+    println(Changelog[LatestVersion]);
+  }
+}
+
 // Setup
 void setup()
 {
@@ -40,6 +47,10 @@ void setup()
   frameRate(FPS);
   smooth(0);
   strokeWeight(1);
+  //strokeCap(1);
+  //strokeJoin(MITER);
+  cursor(HAND);
+  textAlign(LEFT);
   
   //Voice();
   Visual();
@@ -52,7 +63,7 @@ void draw()
   ColorsSwitch();
   Welcome();
   
-  println("Frames = " + frameCount + "| FPS = " + frameRate);
+  //println("Frames = " + frameCount + "| FPS = " + frameRate);
 }
 
 // Welcome
@@ -76,16 +87,6 @@ void Welcome()
   
   MAO();
   Texts();
-}
-
-void MAO()
-{
-  if (MAO)
-  {
-    fill(Pink[1]);
-    text("Make the MAO !",MAO_x,MAO_y);
-    MAO_x++;
-  }
 }
 
 // MousePressed
