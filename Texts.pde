@@ -1,7 +1,20 @@
 // Texts
+byte TextSize_16 = 16;
+
+String[] Changelog;
+
+byte MAO_x = 0;
+byte MAO_y = 64;
 
 void Texts()
 {
+  textFont(createFont("fonts/atari/AtariSmall.ttf",1)); // define 1 for Null..
+  
+  fill(Pink[1]);
+  textSize(TextSize_16 +4);
+  text("Make the MAO !",MAO_x,MAO_y);
+  MAO_x++;
+  
   fill(Pink[1]);
   if (hour() < 5)
   {
@@ -37,6 +50,6 @@ void Texts()
   
   fill(Pink[3]);
   textSize(TextSize_16 - 4);
-  text("TEST = USE // <-(L) MOVE (R)-> // READY!", 10,100);
-  text("And press touch k,o,h,s for play sounds", 10,100);
+  text("TEST = USE // <-(L) MOVE (R)-> // READY!", 5,85);
+  text("And press touch k,o,h,s for play sounds", 5,100);
 }
