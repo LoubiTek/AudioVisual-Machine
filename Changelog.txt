@@ -7,4 +7,4 @@ Version 0.1
 - Add Keywords Mode (for play manuel the 8 bits beatbox drumkit sounds)
 
 Version 0.2
-- Add new Font and Read Changelog for Latest Version
+- Add cursor hand, new Font and Read Changelog for Latest Version
