@@ -10,6 +10,7 @@ AudioPlayer[] drumkit = new AudioPlayer[4];
 AudioOutput out;
 
 int s = int(random(samples.length));
+int note = 0;
 
 // LoadAudio
 void LoadAudio()
