@@ -61,6 +61,7 @@ void setup()
 void draw()
 {
   ColorsSwitch();
+  Loading();
   Welcome();
   
   //println("Frames = " + frameCount + "| FPS = " + frameRate);
