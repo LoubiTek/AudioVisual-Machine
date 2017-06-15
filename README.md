@@ -12,7 +12,7 @@ The project is structured around 4 modules. <br/>
 Thanks to the authors all of these libs. <br/>
 
 Here is a preview ! <br/>
-![alt tag](http://i.imgur.com/HBOUh6W.png) <br/>
+![alt tag](http://i.imgur.com/hKP8ayZ.png) <br/>
 
 # Technical Characteristics <br/>
 
