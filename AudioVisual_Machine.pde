@@ -1,16 +1,16 @@
-// LoubiTek| AudioVisual Machine | 2017
+// LoubiTek| AudioVisual Machine |2017
 
 String GFX = JAVA2D;
 byte FPS = 30;
 
-float V = 0.2;
+float V = 0.3;
 
+boolean SoftWareLoop = true;
+boolean SoftWare = false;
+boolean Intro = true;
+boolean Welcome = true;
 boolean Start = false;
 boolean Event = true;
-//boolean SoftWareLoop = true;
-//boolean SoftWare = false;
-//boolean Intro = true;
-//boolean Welcome = false;
 //boolean Sequenceur = false;
 
 //int BPM = 0;
@@ -18,7 +18,6 @@ boolean Event = true;
 // Init
 void Initialize()
 {
-    //fullScreen();
     size(320, 200, GFX);
     println("Size: 320*200|" + GFX);
 }
@@ -30,6 +29,7 @@ void settings()
   LoadAudio();
 }
 
+// Loading
 void Loading()
 {
   // Read Informations Text
@@ -38,11 +38,13 @@ void Loading()
   {
     println(Changelog[LatestVersion]);
   }
+  
+  AV_Logo = loadShape("AV_Logo.svg");
 }
 
 // Setup
 void setup()
-{
+{ 
   background(Pink[0]);
   frameRate(FPS);
   smooth(0);
@@ -52,7 +54,8 @@ void setup()
   cursor(HAND);
   textAlign(LEFT);
   
-  //Voice();
+  Grid();
+  Voice();
   Visual();
   GUI();
 }
@@ -62,9 +65,34 @@ void draw()
 {
   ColorsSwitch();
   Loading();
-  Welcome();
+  
+  if (SoftWareLoop == Intro)
+  {
+    Intro();
+  }
+  else if (SoftWareLoop == Welcome)
+  {
+    Welcome();
+  }
+  else SoftWare();
   
   //println("Frames = " + frameCount + "| FPS = " + frameRate);
+}
+
+// Intro
+void Intro()
+{
+  background(Pink[0]);
+  text("Welcome to AV Machine !",5,20);
+  shape(AV_Logo,0,0);
+  
+  if (mousePressed)
+  {
+    Intro = false;
+  }
+  
+  text("Clic <3 !",5,180);
+  
 }
 
 // Welcome
@@ -87,12 +115,31 @@ void Welcome()
   line(width*note/1000, 0, width*note/1000, height);
   
   Texts();
+  
+  if(keyPressed)
+  {
+    Welcome = false;
+  }
+  
+  text("Press the key :)",5,170);
+}
+
+// SoftWare
+void SoftWare()
+{
+  DrawGrid();
 }
 
 // MousePressed
 void mousePressed()
 {
-  samples[s].loop();
+  //samples[s].loop();
+}
+
+// MouseClicked
+void mouseClicked()
+{
+  
 }
 
 // Exit
@@ -103,12 +150,6 @@ void Exit()
     Start = true;
     println("Hello ! Welcome !");
     tts.speak("Hello, Welcome !");
-    
-    println("Click on Start for lunch the sequencer !");
-    tts.speak("Click on Start for lunch the sequencer !");
-    
-    println("Or Click on Exit for close the software !");
-    tts.speak("Or Click on Exit for close the software !");
   }   
   else
   {
@@ -151,10 +192,18 @@ void keyPressed()
         pattern.rect(0, 0, width, height);
         note++;
       }
+      if (keyCode == UP)
+      {
+        
+      }
       if (keyCode == LEFT)
       {
         pattern.rect(0, 0, width, height);
         note--;
+      }
+      if (keyCode == DOWN)
+      {
+        
       }
       if (keyCode == ESC)
       {
