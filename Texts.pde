@@ -1,4 +1,3 @@
-// Texts
 byte TextSize_16 = 16;
 
 String[] Changelog;
@@ -6,6 +5,7 @@ String[] Changelog;
 byte MAO_x = 0;
 byte MAO_y = 64;
 
+// Texts
 void Texts()
 {
   textFont(createFont("fonts/atari/AtariSmall.ttf",1)); // define 1 for Null..
