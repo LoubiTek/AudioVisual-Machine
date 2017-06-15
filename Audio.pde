@@ -1,5 +1,4 @@
 // Audio
-
 import ddf.minim.Minim;
 import ddf.minim.AudioPlayer;
 import ddf.minim.AudioOutput;
@@ -9,7 +8,7 @@ AudioPlayer[] samples = new AudioPlayer[3];
 AudioPlayer[] drumkit = new AudioPlayer[4];
 AudioOutput out;
 
-int s = int(random(samples.length));
+byte s = byte(random(samples.length));
 int note = 0;
 
 // LoadAudio
@@ -19,7 +18,7 @@ void LoadAudio()
   out = minim.getLineOut(Minim.MONO,256);
   out.setGain(-2);
   
-  for (int s = 0; s < samples.length; s++)
+  for (byte s = 0; s < samples.length; s++)
   {
     samples[s] = minim.loadFile("samples/" + s + ".wav");
     samples[s].setGain(-32);
