@@ -1,8 +1,8 @@
 // Text to Speech
-
 import guru.ttslib.*;
 TTS tts;
 
+// Voice
 void Voice()
 {
   tts = new TTS();
