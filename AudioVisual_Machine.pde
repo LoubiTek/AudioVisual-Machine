@@ -90,8 +90,6 @@ void Intro()
   {
     Intro = false;
   }
-  
-  text("Clic <3 !",5,180);
 }
 
 // Welcome
