@@ -86,13 +86,12 @@ void Intro()
   text("Welcome to AV Machine !",5,20);
   shape(AV_Logo,0,0);
   
-  if (mousePressed)
+  if (millis() > 5000) // || second() > 5
   {
     Intro = false;
   }
   
   text("Clic <3 !",5,180);
-  
 }
 
 // Welcome
@@ -156,6 +155,7 @@ void Exit()
     Start = false;
     println("Bye Bye !, See a later !");
     tts.speak("Bye Bye !, See a later !");
+    delay(1000);
     exit();
   }
 }
