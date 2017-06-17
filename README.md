@@ -15,40 +15,7 @@ Here is a preview ! <br/>
 ![alt tag](http://i.imgur.com/hKP8ayZ.png) <br/>
 
 # Technical Characteristics <br/>
-
-Display CGA Mode: <br/>
-
-Screen Definition = 320x200 <br/>
-FrameRate = 30 <br/>
-Color Depth = 2-bit color <br/>
-Palette --> 4 colors (black, pink, pink 50% saturate, white) <br/>
-
-Audio: <br/>
-
-Canal = MONO <br/>
-BufferSize = 256 <br/>
-
-8 bits Samples: (BeatBox) <br/>
-Drum Kit List <br/>
-
-- Kick
-- Open Hat
-- Hit Hat
-- Snare
-
-All sounds were created with my own voice! <br/>
-
-Menu: <br/>
-
-Start = Lunch the sequencer <br/>
-Options = (BPM,FPS,VOL) <br/>
-Credit = Draw my nickname <br/>
-Exit = Close/Quit <br/>
-
-Two Modes: Keywords and Mouse <br/>
-
-Keywords = Manuel <br/>
-Mouse = Grid <br/>
+See the concept.txt file! <br/>
 
 # License <br/>
 Feel free to change the code or replace / add your own content. License and CC0 ! <br/>
