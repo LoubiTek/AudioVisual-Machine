@@ -15,7 +15,7 @@ Here is a preview ! <br/>
 ![alt tag](http://i.imgur.com/4RJxTwI.png) <br/>
 
 # Technical Characteristics <br/>
-See the concept.txt file ! <br/>
+See the Concept.txt file ! <br/>
 
 # License <br/>
 Feel free to change the code or replace / add your own content. License and CC0 ! <br/>
