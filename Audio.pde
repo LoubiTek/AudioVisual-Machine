@@ -1,11 +1,12 @@
 // Audio
 import ddf.minim.Minim;
 import ddf.minim.AudioPlayer;
+import ddf.minim.AudioSample;
 import ddf.minim.AudioOutput;
 
 Minim minim;
 AudioPlayer[] samples = new AudioPlayer[3];
-AudioPlayer[] drumkit = new AudioPlayer[4];
+AudioSample[] drumkit = new AudioSample[4];
 AudioOutput out;
 
 byte s = byte(random(samples.length));
@@ -25,8 +26,24 @@ void LoadAudio()
   }
   
   // drumkit
-  drumkit[0] = minim.loadFile("drumkit/kick.wav");
-  drumkit[1] = minim.loadFile("drumkit/open hat.wav");
-  drumkit[2] = minim.loadFile("drumkit/hit hat.wav");
-  drumkit[3] = minim.loadFile("drumkit/snare.wav");
+  drumkit[0] = minim.loadSample("drumkit/kick.wav",256);
+  if (drumkit[0] == null)
+  {
+    println("Error, no file kick sample!");
+  }
+  drumkit[1] = minim.loadSample("drumkit/open hat.wav",256);
+  if (drumkit[1] == null)
+  {
+    println("Error, no file open hat sample!");
+  }
+  drumkit[2] = minim.loadSample("drumkit/hit hat.wav",256);
+  if (drumkit[2] == null)
+  {
+    println("Error, no file hit hat sample!");
+  }
+  drumkit[3] = minim.loadSample("drumkit/snare.wav",256);
+  if (drumkit[3] == null)
+  {
+    println("Error, no file snare sample!");
+  }
 }
