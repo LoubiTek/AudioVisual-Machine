@@ -6,6 +6,7 @@ Screen Definition = 320x200
 FrameRate = 30
 Color Depth = 2-bit color
 Palette --> 4 colors (black, pink, pink 50% saturate, white)
++ Visual Effects = Rainbow/Random
 
 Audio:
 
