@@ -7,7 +7,10 @@ Version 0.1
 - Add Keywords Mode (for play manuel the 8 bits beatbox drumkit sounds)
 
 Version 0.2
-- Add cursor hand, new Font and Read Changelog for Latest Version
+- Add new Font and Read Changelog for Latest Version
 
 Version 0.3
 - Add Logo and Chess Background
+
+Version 0.4
+- Add Show FPS, MAO Text Fix (Move -> and redraw pos_x), Time/Flux (Management), Add Clock, Change AudioPlayer(drumkit) to AudioSample, Add Errors for LoadAudio and Draw LinesVisualizer, Replace String Texts Names/Numbers | Next Release: Need Debug (System Time/Clock..)
