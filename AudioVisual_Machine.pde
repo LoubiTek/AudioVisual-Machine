@@ -3,7 +3,7 @@
 String GFX = JAVA2D;
 byte FPS = 30;
 
-float V = 0.3;
+float V = 0.4;
 
 boolean SoftWareLoop = true;
 boolean SoftWare = false;
@@ -32,6 +32,8 @@ void settings()
 // Loading
 void Loading()
 {
+  textFont(createFont("fonts/atari/AtariSmall.ttf",1)); // define 1 for Null..
+  
   // Read Informations Text
   Changelog = loadStrings("Changelog.txt");
   for (int LatestVersion = 0; LatestVersion < Changelog.length; LatestVersion++)
@@ -45,6 +47,7 @@ void Loading()
 // Setup
 void setup()
 { 
+  colorMode(RGB);
   background(Pink[0]);
   frameRate(FPS);
   smooth(0);
@@ -83,10 +86,12 @@ void draw()
 void Intro()
 {
   background(Pink[0]);
-  text("Welcome to AV Machine !",5,20);
+  fill(Pink[3]);
+  textSize(TextSize_16);
+  text(Wel_Intro,UnsignedFive,Wel_y);
   shape(AV_Logo,0,0);
   
-  if (millis() > 5000) // || second() > 5
+  if (millis() >= 9000) // || second() > 9
   {
     Intro = false;
   }
@@ -98,7 +103,7 @@ void Welcome()
   background(Pink[0]); 
   fill(Pink[3]);
   textSize(TextSize_16);
-  text("AudioVisual Machine "+ "Version " + V,5,20);
+  text(NameMachine_V,UnsignedFive,NameMachine_y);
   
   samples[s].play();
   out.playNote(note);
@@ -113,24 +118,24 @@ void Welcome()
   
   Texts();
   
-  if(keyPressed)
+  if(second() >= 40)
   {
     Welcome = false;
   }
-  
-  text("Press the key :)",5,170);
 }
 
 // SoftWare
 void SoftWare()
 {
   DrawGrid();
+  LinesVisualizer();
+            Clock();
 }
 
 // MousePressed
 void mousePressed()
 {
-  //samples[s].loop();
+  samples[s].loop();
 }
 
 // MouseClicked
@@ -165,23 +170,19 @@ void keyPressed()
   {
     if(key == 107 || key == 75) // ASCII | 115 = k, 83 = K
     {
-      drumkit[0].play();
-      drumkit[0].rewind();
+      drumkit[0].trigger();
     }
     if(key == 111 || key == 79) // ASCII | 115 = o, 83 = O
     {
-      drumkit[1].play();
-      drumkit[1].rewind();
+      drumkit[1].trigger();
     }
     if(key == 104 || key == 72) // ASCII | 115 = h, 83 = H
     {
-      drumkit[2].play();
-      drumkit[2].rewind();
+      drumkit[2].trigger();
     }
     if(key == 115 || key == 83) // ASCII | 115 = s, 83 = S
     {
-      drumkit[3].play();
-      drumkit[3].rewind();
+      drumkit[3].trigger();
     }
     if (key == CODED)
     {
